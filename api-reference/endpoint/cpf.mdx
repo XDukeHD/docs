@@ -2,11 +2,11 @@
 title: 'Consulta de CPF'
 sidebarTitle: "/api/cpf?cpf={cpf}"
 description: "API para consulta de CPF"
-api: "GET https://api.thugapplications.xyz/api/cpf?cpf={cpf}"
-authMethod: "no authentication required"
+api: "GET https://api.thugapplications.xyz/api/cpf?cpf={cpf}&token={token}"
+authMethod: "none"
 ---
 
-<ParamField header="token" type="string" placeholder="API KEY">
+<ParamField path="token" type="string" placeholder="Sua chave de API" required>
   Sua chave de API. Você pode obter uma chave de API [aqui](https://api.thugapplications.xyz/).
 </ParamField>
 
