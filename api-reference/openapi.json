@@ -19,14 +19,14 @@
     }
   ],
   "paths": {
-    "/plants": {
+    "/cpf": {
       "get": {
-        "description": "Returns all plants from the system that the user has access to",
+        "description": "Retorna Informações do CPF enviado.",
         "parameters": [
           {
-            "name": "limit",
+            "name": "cpf",
             "in": "query",
-            "description": "The maximum number of results to return",
+            "description": "CPF que deseja consultar",
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -38,13 +38,33 @@
             "description": "Plant response",
             "content": {
               "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Plant"
-                  }
-                }
-              }
+  "aboutAPI": {
+    "Thug": "Thug Applications - Solutions for your problems",
+    "dev": "XDuke - Telegram: @XDukeBR - GitHub: @XDukeHD - Discord: xduke_br",
+    "bancodados": "DATASUS-2023"
+  },
+  "nome": "NaN",
+  "cpf": "77777777777",
+  "cns": "77777777777",
+  "municipioNascimento": "São Paulo - SP",
+  "municipio": "São Paulo - SP",
+  "mae": "Tereza Soares",
+  "pai": "Silas Malafaia",
+  "telefone": "11:11111111",
+  "endereco": {
+    "rua": "RUA Carandiru",
+    "numero": "555",
+    "bairro": "VILA Dos Mortos",
+    "cidade": "São Paulo - SP",
+    "cep": "000000000"
+  },
+  "rg": {
+    "numero": "44444444",
+    "orgao_emissor": "SSP - SSP - SECRETARIA DE SEGURANCA PUBLICA",
+    "uf": "SP",
+    "data_emissao": "5522525252525252"
+  }
+}
             }
           },
           "400": {

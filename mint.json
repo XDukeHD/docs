@@ -22,50 +22,34 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Site",
+    "url": "https://api.thugapplications.xyz"
   },
   "tabs": [
     {
-      "name": "API Reference",
+      "name": "Documentação da API",
       "url": "api-reference"
     }
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "Discord",
+      "icon": "discord",
+      "url": "https://discord.com/"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "Telegram",
+      "icon": "telegram",
+      "url": "https://t.me/"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Geral",
       "pages": [
         "introduction",
         "quickstart",
         "development"
-      ]
-    },
-    {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
       ]
     },
     {
@@ -77,15 +61,14 @@
     {
       "group": "Endpoint Examples",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
-      ]
+        "api-reference/endpoint/cpf",
+        "api-reference/endpoint/cns",
+        "api-reference/endpoint/cnpj",
+        "api-reference/endpoint/placa",
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
+    "telegram": "https://t.me/",
+    "github": "https://github.com/xdukehd"
   }
 }
