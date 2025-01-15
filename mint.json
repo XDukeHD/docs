@@ -64,7 +64,7 @@
         "api-reference/endpoint/cpf",
         "api-reference/endpoint/cns",
         "api-reference/endpoint/cnpj",
-        "api-reference/endpoint/placa",
+        "api-reference/endpoint/placa"
     }
   ],
   "footerSocials": {
