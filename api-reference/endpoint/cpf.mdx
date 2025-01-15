@@ -6,11 +6,11 @@ api: "GET https://api.thugapplications.xyz/api/cpf?cpf={cpf}&token={token}"
 authMethod: "none"
 ---
 
-<ParamField path="token" type="string" placeholder="Sua chave de API" required>
+<ParamField query="token" type="string" placeholder="Sua chave de API">
   Sua chave de API. Você pode obter uma chave de API [aqui](https://api.thugapplications.xyz/).
 </ParamField>
 
-<ParamField path="cpf" type="string" placeholder="Número do CPF" required>
+<ParamField query="cpf" type="string" placeholder="Número do CPF" required>
   O número do CPF que deseja consultar.
 </ParamField>
 
