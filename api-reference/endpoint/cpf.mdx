@@ -6,6 +6,20 @@ api: "GET https://api.thugapplications.xyz/api/cpf?cpf={cpf}"
 authMethod: "no authentication required"
 ---
 
+<ParamField header="token" type="string" placeholder="API KEY">
+  Sua chave de API. Você pode obter uma chave de API [aqui](https://api.thugapplications.xyz/).
+</ParamField>
+
+<ParamField path="cpf" type="string" placeholder="Número do CPF" required>
+  O número do CPF que deseja consultar.
+</ParamField>
+
+
+### Response
+
+<ResponseField name="status" type="string">
+  O status da requisição. Se a requisição foi bem sucedida, o valor será `success` com status code `200`. Caso contrário, o valor será `error` com status code `400`.
+</ResponseField>
 
 
 <ResponseExample>
