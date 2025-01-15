@@ -35,7 +35,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Plant response",
+            "description": "Sucesso no Retorno da rota CPF",
             "content": {
               "application/json": {
   "aboutAPI": {
