@@ -2,10 +2,10 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Documentação",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "https://api.thugapplications.xyz/static/img/logo.png",
+    "light": "https://api.thugapplications.xyz/static/img/logo.png"
   },
-  "favicon": "/logo/logo.png",
+  "favicon": "https://api.thugapplications.xyz/static/img/logo.png",
   "colors": {
     "primary": "#0D9373",
     "light": "#07C983",
