@@ -41,9 +41,7 @@
     {
       "group": "Geral",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "introduction"
       ]
     },
     {
