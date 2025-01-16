@@ -2,17 +2,10 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Documentação",
   "logo": {
-<<<<<<< HEAD
     "dark": "https://thug-applications.vercel.app/img/robo.png",
     "light": "https://thug-applications.vercel.app/img/robo.png"
   },
   "favicon": "/logo/logo.png",
-=======
-    "dark": "https://api.thugapplications.xyz/static/img/logo.png",
-    "light": "https://api.thugapplications.xyz/static/img/logo.png"
-  },
-  "favicon": "https://api.thugapplications.xyz/static/img/logo.png",
->>>>>>> abf237c54bdfaaf752ac1b2c69956ef68ab2cfd5
   "colors": {
     "primary": "#0D9373",
     "light": "#07C983",
