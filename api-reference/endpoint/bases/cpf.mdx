@@ -1,0 +1,59 @@
+---
+title: 'Consulta de CPF'
+sidebarTitle: "Consulta de CPF"
+description: "API para consulta de CPF"
+api: "GET https://api.thugapplications.xyz/api/cpf?cpf={cpf}&token={token}"
+authMethod: "none"
+---
+<Warning>
+  Verifique [Aqui](https://api.thugapplications.xyz/rotas) se a rota está disponíveil Gratuitamente ou apenas para assinantes.
+</Warning>
+
+<ParamField query="token" type="string" placeholder="Sua chave de API">
+  Sua chave de API. Você pode obter uma chave de API [aqui](https://api.thugapplications.xyz/).
+</ParamField>
+
+<ParamField query="cpf" type="string" placeholder="Número do CPF" required>
+  O número do CPF que deseja consultar.
+</ParamField>
+
+
+### Response
+
+<ResponseField name="status" type="string">
+  O status da requisição. Se a requisição foi bem sucedida, o valor será `success` com status code `200`. Caso contrário, o valor será `error` com status code `400`.
+</ResponseField>
+
+
+<ResponseExample>
+  ```json
+  {
+  "aboutAPI": {
+    "Thug": "Thug Applications - Solutions for your problems",
+    "dev": "XDuke - Telegram: @XDukeBR - GitHub: @XDukeHD - Discord: xduke_br",
+    "bancodados": "DATASUS-2023"
+  },
+  "nome": "NaN",
+  "cpf": "77777777777",
+  "cns": "77777777777",
+  "municipioNascimento": "São Paulo - SP",
+  "municipio": "São Paulo - SP",
+  "mae": "Tereza Soares",
+  "pai": "Silas Malafaia",
+  "telefone": "11:11111111",
+  "endereco": {
+    "rua": "RUA Carandiru",
+    "numero": "555",
+    "bairro": "VILA Dos Mortos",
+    "cidade": "São Paulo - SP",
+    "cep": "000000000"
+  },
+  "rg": {
+    "numero": "44444444",
+    "orgao_emissor": "SSP - SSP - SECRETARIA DE SEGURANCA PUBLICA",
+    "uf": "SP",
+    "data_emissao": "5522525252525252"
+  }
+}
+  ```
+</ResponseExample>

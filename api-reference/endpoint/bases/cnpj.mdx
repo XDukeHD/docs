@@ -1,0 +1,116 @@
+---
+title: 'Consulta de CNPJ'
+sidebarTitle: "Consulta de CNPJ"
+description: "API para consulta de CNPJ"
+api: "GET https://api.thugapplications.xyz/api/cnpj?cnpj={cnpj}&token={token}"
+authMethod: "none"
+---
+
+<Warning>
+  Verifique [Aqui](https://api.thugapplications.xyz/rotas) se a rota está disponíveil Gratuitamente ou apenas para assinantes.
+</Warning>
+<ParamField query="token" type="string" placeholder="Sua chave de API">
+  Sua chave de API. Você pode obter uma chave de API [aqui](https://api.thugapplications.xyz/).
+</ParamField>
+
+<ParamField query="cnpj" type="string" placeholder="Número do CNPJ" required>
+  O número do CNPJ que deseja consultar.
+</ParamField>
+
+
+### Resultado da requisição
+
+<ResponseField name="200" type="string">
+    Se a requisição foi bem sucedida, o valor será `success` com status code `200`.
+</ResponseField>
+
+
+<ResponseExample>
+  ```json
+  {
+  "aboutAPI": {
+    "Thug": "Thug Applications - Solutions for your problems",
+    "dev": "XDuke - Telegram: @XDukeBR - GitHub: @XDukeHD - Discord: xduke_br",
+    "bancodados": "Receita Federal"
+  },
+  "cnpj": "06.990.590/0001-23",
+  "tipo": "MATRIZ",
+  "abertura": "01/09/2004",
+  "nome": "GOOGLE BRASIL INTERNET LTDA.",
+  "socios": [
+    {
+      "nome": "GOOGLE LLC",
+      "qual": "37-Sócio Pessoa Jurídica Domiciliado no Exterior",
+      "pais_origem": "ESTADOS UNIDOS",
+      "nome_rep_legal": "YUN KI LEE",
+      "qual_rep_legal": "17-Procurador"
+    },
+    {
+      "nome": "GOOGLE INTERNATIONAL LLC",
+      "qual": "37-Sócio Pessoa Jurídica Domiciliado no Exterior",
+      "pais_origem": "ESTADOS UNIDOS",
+      "nome_rep_legal": "YUN KI LEE",
+      "qual_rep_legal": "17-Procurador"
+    },
+    {
+      "nome": "FABIO JOSE SILVA COELHO",
+      "qual": "05-Administrador"
+    }
+  ],
+  "fantasia": "",
+  "atividade_principal": [
+    {
+      "code": "63.19-4-00",
+      "text": "Portais, provedores de conteúdo e outros serviços de informação na internet"
+    }
+  ],
+  "atividades_secundarias": [
+    {
+      "code": "47.51-2-01",
+      "text": "Comércio varejista especializado de equipamentos e suprimentos de informática"
+    },
+    {
+      "code": "62.01-5-01",
+      "text": "Desenvolvimento de programas de computador sob encomenda"
+    },
+    {
+      "code": "62.02-3-00",
+      "text": "Desenvolvimento e licenciamento de programas de computador customizáveis"
+    },
+    {
+      "code": "63.11-9-00",
+      "text": "Tratamento de dados, provedores de serviços de aplicação e serviços de hospedagem na internet"
+    },
+    {
+      "code": "64.62-0-00",
+      "text": "Holdings de instituições não-financeiras"
+    },
+    {
+      "code": "73.19-0-04",
+      "text": "Consultoria em publicidade"
+    },
+    {
+      "code": "82.99-7-99",
+      "text": "Outras atividades de serviços prestados principalmente às empresas não especificadas anteriormente"
+    }
+  ],
+  "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+  "logradouro": "AV BRIG FARIA LIMA",
+  "numero": "3477",
+  "complemento": "ANDAR 17A20 TSUL 2 17A20",
+  "cep": "04.538-133",
+  "bairro": "ITAIM BIBI",
+  "municipio": "SAO PAULO",
+  "uf": "SP",
+  "email": "googlebrasil@google.com",
+  "telefone": "(11) 2395-8400",
+  "efr": "",
+  "situacao": "ATIVA",
+  "data_situacao": "01/09/2004",
+  "motivo_situacao": "",
+  "situacao_especial": "",
+  "data_situacao_especial": "",
+  "capital_social": "200000000.00"
+}
+  ```
+</ResponseExample>

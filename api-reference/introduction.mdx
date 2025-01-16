@@ -1,33 +1,27 @@
 ---
-title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+title: 'Thug API - Introdução'
+description: 'Bem-vindo a documentação da API da Thug'
 ---
 
 <Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
+  A API ainda está em desenvolvimento, então alguns endpoints podem não funcionar corretamente, ou não estar disponíveis ou não conter as informações esperadas, por favor, tenha paciência.
 </Note>
 
-## Welcome
+## Bem vindo
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+Bem-vindo a documentação da API da Thug Applications. Aqui você encontrará todas as informações necessárias para utilizar a API da Thug.
 
 <Card
-  title="Plant Store Endpoints"
+  title="Todas as rotas"
   icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
+  href="https://api.thugapplications.xyz/rotas"
 >
-  View the OpenAPI specification file
+Vejas todas as bases de dados disponíveis e suas respectivas rotas.
 </Card>
 
-## Authentication
+## Token de acesso
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
-
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
+Nem todas as rotas necessitam de um token de acesso, mas algumas sim. Para obter um token de acesso, você deve obtela pessoalmente com o desenvolvedor da API [XDuke](https://t.me/XDukeBR).
+```
+EXEMPLO: https://api.thugapplications.xyz/api/cpf?cpf=12345678901&token=SEU_TOKEN
 ```

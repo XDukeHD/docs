@@ -1,0 +1,59 @@
+---
+title: 'Consulta de Placa'
+sidebarTitle: "Consulta de Placa"
+description: "API para consulta de Placa"
+api: "GET https://api.thugapplications.xyz/api/placa?placa={placa}&token={token}"
+authMethod: "none"
+---
+<Warning>
+  Verifique [Aqui](https://api.thugapplications.xyz/rotas) se a rota está disponíveil Gratuitamente ou apenas para assinantes.
+</Warning>
+
+<ParamField query="token" type="string" placeholder="Sua chave de API">
+  Sua chave de API. Você pode obter uma chave de API [aqui](https://api.thugapplications.xyz/).
+</ParamField>
+
+<ParamField query="placa" type="string" placeholder="Número da Placa" required>
+    O número da placa que deseja consultar.
+</ParamField>
+
+
+### Response
+
+<ResponseField name="status" type="string">
+  O status da requisição. Se a requisição foi bem sucedida, o valor será `success` com status code `200`. Caso contrário, o valor será `error` com status code `400`.
+</ResponseField>
+
+
+<ResponseExample>
+  ```json
+  {
+	"aboutAPI": {
+		"Thug": "Thug Applications - Solutions for your problems",
+		"dev": "XDuke - Telegram: @XDukeBR - GitHub: @XDukeHD - Discord: xduke_br",
+		"bancodados": "DETRAN"
+	},
+	"id": "6666666666",
+	"placa": "LUC6666",
+	"placaAntiga": "LUC6666",
+	"placaNova": "LUC6666",
+	"renavam": "Informação não disponível",
+	"chassi": "99999999999999999",
+	"motor": "42423423423",
+	"faturado": "423423423423",
+	"carroceria": null,
+	"caixa_cambio": "43242342342",
+	"eixo_traseiro_dif": null,
+	"ano": "2025",
+	"cor": "5",
+	"municipio": "4565",
+	"uf": "SP",
+	"situacao": "S",
+	"restricao_1": "7",
+	"restricao_2": "0",
+	"restricao_3": "0",
+	"restricao_4": "0",
+	"limite_restricao_trib": null
+}
+  ```
+</ResponseExample>

@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Documentação",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "https://thug-applications.vercel.app/img/robo.png",
+    "light": "https://thug-applications.vercel.app/img/robo.png"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/logo.png",
   "colors": {
     "primary": "#0D9373",
     "light": "#07C983",
@@ -15,12 +15,6 @@
       "to": "#07C983"
     }
   },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
-    }
-  ],
   "topbarCtaButton": {
     "name": "Site",
     "url": "https://api.thugapplications.xyz"
@@ -40,7 +34,7 @@
     {
       "name": "Telegram",
       "icon": "telegram",
-      "url": "https://t.me/"
+      "url": "https://t.me/thugapi"
     }
   ],
   "navigation": [
@@ -59,17 +53,17 @@
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Base de Dados",
       "pages": [
-        "api-reference/endpoint/cpf",
-        "api-reference/endpoint/cns",
-        "api-reference/endpoint/cnpj",
-        "api-reference/endpoint/placa"
+        "api-reference/endpoint/bases/cpf",
+        "api-reference/endpoint/bases/cns",
+        "api-reference/endpoint/bases/cnpj",
+        "api-reference/endpoint/bases/placa"
       ]
     }
   ],
   "footerSocials": {
-    "telegram": "https://t.me/",
+    "telegram": "https://t.me/thugapi",
     "github": "https://github.com/xdukehd"
   }
 }
