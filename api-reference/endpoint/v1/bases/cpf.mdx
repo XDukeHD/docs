@@ -1,0 +1,101 @@
+---
+title: 'Consulta de CPF'
+sidebarTitle: "Consulta de CPF"
+description: "API para consulta de CPF"
+api: "GET https://api.thugapplications.xyz/api/v1/cpf?cpf={cpf}&authorization={authorization}&page={page}"
+authMethod: "none"
+---
+<Warning>
+  Verifique [Aqui](https://api.thugapplications.xyz/rotas) se a rota está disponíveil Gratuitamente ou apenas para assinantes.
+</Warning>
+
+<ParamField query="authorization" type="string" placeholder="Token da sua Conta">
+  Seu token. Você pode obter uma chave de API [aqui](https://api.thugapplications.xyz/) fazendo o cadastro e indo na aba Meu Perfil da dashboard.
+</ParamField>
+
+<ParamField query="cpf" type="string" placeholder="Número do CPF" required>
+  O número do CPF que deseja consultar.
+</ParamField>
+
+<ParamField query="page" type="string" placeholder="Exibição de Página ao invés de dados em json">
+  true = Exibir página || false = Exibir dados em Json
+</ParamField>
+
+
+### Response
+
+<ResponseField name="status" type="string">
+  O status da requisição. Se a requisição foi bem sucedida, o valor será `success` com status code `200`. Caso contrário, o valor será `error` com status code `400`.
+</ResponseField>
+
+
+<ResponseExample>
+  ```json
+  {
+  "aboutAPI": {
+    "Thug": "Thug Applications - Solutions for your problems",
+    "dev": "XDuke - Telegram: @XDukeBR - GitHub: @XDukeHD - Discord: xduke_br",
+    "bancodados": "Thug-Database",
+    "dbversion": "v1"
+  },
+  "nome": "SAMUEL VIEIRA LOPES",
+  "nascimento": "1948-04-08",
+  "idade": 69,
+  "cpf": "77777777",
+  "cns": "77777777777777",
+  "cnsDefinitivo": null,
+  "cnsProvisorio": null,
+  "rg": {
+    "numero": "65213756",
+    "orgao_emissor": null,
+    "uf": null,
+    "data_emissao": null
+  },
+  "municipioNascimento": "GOIANIA - GO",
+  "municipio": "GOIAIS - GO",
+  "mae": "RAMON",
+  "pai": "FLORINDA",
+  "telefone": "11:99999-0136",
+  "outrosTelefones": null,
+  "enderecoPadrao": {
+    "rua": "BOA VISTA",
+    "numero": "11",
+    "bairro": "MANGUEIRAS",
+    "cidade": "GOIANIA - GO",
+    "cep": "7000000"
+  },
+  "outrosEnderecos": null,
+  "vacinas": [
+    {
+      "id": 85,
+      "sigla": "COV-19 AST/FIO-CVISH",
+      "abreviatura": "vacina Covid-19-recombinante, AstraZeneca/Fiocruz (Covishield)",
+      "nome": "vacina covid-19 (recombinante)",
+      "imunizacoes": [
+        {
+          "id": "55555555",
+          "sistemaOrigem": "Novo PNI",
+          "nomeCampanha": "Covid-19",
+          "esquemaDose": {
+            "codigoEsquemaDose": 62,
+            "tipoDoseDto": {
+              "id": 1,
+              "descricao": "1ª Dose"
+            }
+          },
+          "dataAplicacao": "2025-08-19",
+          "lote": "FFFFFFFFF",
+          "nomeEstabelecimentoSaude": "5555555 - UNIDADE DE SAUDE DA FAMILIA PSF 302",
+          "idadeAplicacao": 26,
+          "nomeProfissionalSaude": "MARCILENE TEODORO FERREIRA DA SILVA",
+          "razaoSocial": "UNIDADE DE SAUDE DA FAMILIA PSF 302",
+          "transmitidaRNDS": true,
+          "fabricante": "FUNDACAO OSWALDO CRUZ",
+          "descricaoGrupoAtendimento": "Pessoas de 18 a 64 anos"
+        }
+      ]
+    }
+  ]
+}
+  ```
+</ResponseExample>

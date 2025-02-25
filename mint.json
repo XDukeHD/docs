@@ -51,12 +51,18 @@
       ]
     },
     {
-      "group": "Base de Dados",
+      "group": "Rotas - v0",
       "pages": [
         "api-reference/endpoint/bases/cpf",
         "api-reference/endpoint/bases/cns",
         "api-reference/endpoint/bases/cnpj",
         "api-reference/endpoint/bases/placa"
+      ]
+    },
+    {
+      "group": "Rotas - v1",
+      "pages": [
+        "api-reference/endpoint/v1/bases/cpf"
       ]
     }
   ],

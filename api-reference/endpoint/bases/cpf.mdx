@@ -2,7 +2,7 @@
 title: 'Consulta de CPF'
 sidebarTitle: "Consulta de CPF"
 description: "API para consulta de CPF"
-api: "GET https://api.thugapplications.xyz/api/cpf?cpf={cpf}&token={token}"
+api: "GET https://api.thugapplications.xyz/api/cpf?cpf={cpf}&token={token}&page={page}"
 authMethod: "none"
 ---
 <Warning>
@@ -10,13 +10,16 @@ authMethod: "none"
 </Warning>
 
 <ParamField query="token" type="string" placeholder="Sua chave de API">
-  Sua chave de API. Você pode obter uma chave de API [aqui](https://api.thugapplications.xyz/).
+  Seu token. Você pode obter uma chave de API [aqui](https://api.thugapplications.xyz/) fazendo o cadastro e indo na aba Meu Perfil da dashboard.
 </ParamField>
 
 <ParamField query="cpf" type="string" placeholder="Número do CPF" required>
   O número do CPF que deseja consultar.
 </ParamField>
 
+<ParamField query="page" type="string" placeholder="Exibição de Página ao invés de dados em json">
+  true = Exibir página || false = Exibir dados em Json
+</ParamField>
 
 ### Response
 
