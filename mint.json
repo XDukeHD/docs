@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Documentação",
   "logo": {
-    "dark": "https://thug-applications.vercel.app/img/robo.png",
-    "light": "https://thug-applications.vercel.app/img/robo.png"
+    "dark": "https://api.thugapplications.xyz/static/img/logo2.png",
+    "light": "https://api.thugapplications.xyz/static/img/logo2.png"
   },
   "favicon": "/logo/logo.png",
   "colors": {
